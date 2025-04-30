@@ -7,7 +7,7 @@ workflows:
         JAVA_VERSION: 17
     scripts:
       - name: Build APK
-        scripts: |
+        script: |
           chmod +x gradlew
           ./gradlew clean assembleDebug
     artifacts:
