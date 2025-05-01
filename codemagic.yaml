@@ -9,7 +9,7 @@ workflows:
       - name: Build APK
         script: |
           chmod +x gradlew
-          ./gradlew :app:clean :app:assembleDebug
+          ./gradlew clean assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
     publishing:
